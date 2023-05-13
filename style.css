@@ -1,0 +1,64 @@
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 50%;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container #counter {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btns button {
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btns button:hover {
+    background-color: #f50;
+    color: #fff;
+}
+
+.btns #increment {
+    background-color: green;
+    color: #fff;
+}
+
+.btns #decrement {
+    background-color: red;
+    color: #fff;
+}
